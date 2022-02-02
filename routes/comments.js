@@ -34,7 +34,7 @@ const Comment = mongoose.model("Comment", commentSchema);
 
 //GET Methodes
 router.get("/", async(req, res) => {
-    const comments = await Comment.find().select({ name: 1, email: 1, _id: 0 });
+    const comments = await Comment.find().select({ name: 1, email: 1, body: 1, _id: 0 });
     res.send(comments);
 });
 
