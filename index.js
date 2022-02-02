@@ -12,7 +12,7 @@ const app = express();
 
 require("./startup/prod")(app);
 
-mongoose.connect("mongodb://localhost/project-alpha")
+mongoose.connect("mongodb+srv://alieen99:alishad2020@project-alpha.hs72h.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
     .then(() => console.log("Connected to MongoDB ..."))
     .catch(err => console.error("Could not connect to MongoDB"));
 
